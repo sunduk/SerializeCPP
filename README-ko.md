@@ -1,3 +1,5 @@
+//TODO: Need to translate.
+
 # SerializeCPP
 Serialize member variables automatically in C++.
 
