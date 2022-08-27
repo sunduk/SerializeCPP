@@ -131,6 +131,9 @@ int main()
 }
 ```
 
+## Result
+![Demo result](https://github.com/sunduk/SerializeCPP/blob/main/demo_result.png?raw=true)
+
 ## Detail implementation
 Variables are to be implemented with the Serializable template class.
 
