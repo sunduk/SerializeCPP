@@ -101,6 +101,31 @@ int main()
     CharacterAttribute bar{};
     bar.Deserialize(bufferFoo.data());
     bar.Print();
+
+
+
+    //------------------------------------------------
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "----- serailize modified variables only -----" << std::endl;
+    CharacterAttribute foo2{};
+    foo2.SetHp(123);
+    foo2.SetSpeed(99.5f);
+    foo2.SetAlive(true);
+    // foo2 -> byte array.
+    std::vector<char> bufferFoo2(foo2.GetModifiedSerializationBufferSize(), 0);
+    foo2.Serialize(bufferFoo2.data());
+    foo2.Print();
+
+    // byte array -> bar2.
+    std::cout << std::endl;
+    std::cout << "----- deserialize modified variables only -----" << std::endl;
+    CharacterAttribute bar2{};
+    bar2.SetJob(1);
+    bar2.Deserialize(bufferFoo2.data());
+    bar2.Print();
     
     return 0;
 }
