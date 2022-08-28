@@ -1,9 +1,10 @@
 # SerializeCPP
 Serialize member variables automatically in C++.
 
-This source code implements to serialize(and deserialize) specific class member variables automatically.
+This source code implements to serialize(and deserialize) member variables automatically.
 
 It is also available partial seraizliation.
+(It will be very useful when you want to send only a few variables to client by network.)
 
 In general, when you want to serialize, you may coding something like this.
 ```
