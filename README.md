@@ -3,6 +3,8 @@ Serialize member variables automatically in C++.
 
 This source code implements to serialize(and deserialize) specific class member variables automatically.
 
+It is also available partial seraizliation.
+
 In general, when you want to serialize, you may coding something like this.
 ```
 // serialize.
