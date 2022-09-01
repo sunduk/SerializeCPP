@@ -119,10 +119,6 @@ private:
 Attribute클래스는 AutoSerializer에서 상속됩니다.
 AutoSerializer는 vector 하나를 멤버 변수로 갖고 있는데 이를 통해 자동적인 직렬화/역직렬화가 가능해 집니다.
 
-The Serializable class is a wrapper of a variable to serialize.
-The constructor would call AddMember method to add members to the vector.
-In this process, the member variables are entered in sequence into there.
-
 Serializable클래스는 직렬화 할 변수들을 래핑한 클래스 입니다.
 생성자에서 AddMember매소드를 호출하여 AutoSerializer클래스가 갖고 있는 vector에 포인터를 등록 합니다.
 결국 Serializable로 선언된 모든 멤버 변수들의 포인터가 vector에 순차적으로 들어가게 됩니다.
