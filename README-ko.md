@@ -1,5 +1,3 @@
-//TODO: Need to translate.
-
 # SerializeCPP
 이 소스 코드는 C++로 원하는 멤버 변수들만 선택적으로 직렬화/역직렬화 하는 방법에 대해서 구현한 내용입니다.
 
